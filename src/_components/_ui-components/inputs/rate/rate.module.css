@@ -1,0 +1,46 @@
+.container {
+    width: max-content;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 0;
+    border-radius: 6px;
+}
+
+.container > span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.rate {
+    width: max-content;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.rate > span {
+    font-size: 22px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.unchecked {
+    color: var(--black-alpha-04);
+}
+
+.checked {
+    color: gold;
+    transform: scale(1.4);
+}
+
+.rate > span:hover, .rate > span:hover ~ span {
+    color: var(--black-alpha-4);
+    transform: scale(1.7);
+}

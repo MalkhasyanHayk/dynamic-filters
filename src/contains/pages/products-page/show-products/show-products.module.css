@@ -1,0 +1,45 @@
+.showProducts {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    --gap: 20px;
+    --columns: 4;
+}
+
+.products > div {
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}
+
+@media (max-width: 576px) {
+    .products {
+        --columns: 1;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .products {
+        --columns: 2;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .products {
+        --columns: 2;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .products {
+        --columns: 3;
+    }
+}

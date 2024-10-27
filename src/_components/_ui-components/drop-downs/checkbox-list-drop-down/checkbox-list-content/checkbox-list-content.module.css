@@ -1,0 +1,29 @@
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.content > div {
+    border-bottom: 1px solid var(--black-alpha-04);
+}
+
+.content > div:last-child {
+    border-bottom: none;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: var(--light);
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}

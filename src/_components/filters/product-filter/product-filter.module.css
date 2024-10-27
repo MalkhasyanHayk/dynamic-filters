@@ -1,0 +1,26 @@
+.productFilter {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.productFilter > h2 {
+    color: var(--primary);
+    font-size: 28px;
+}
+
+.productFilter > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+@media (max-width: 1251px) {
+    .productFilter {
+        display: none;
+    }
+}

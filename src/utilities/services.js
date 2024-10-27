@@ -1,0 +1,1 @@
+export const awaitTimeout = seconds => new Promise(resolve => setTimeout(resolve, seconds));

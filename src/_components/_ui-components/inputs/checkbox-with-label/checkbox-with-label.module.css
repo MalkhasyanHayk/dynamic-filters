@@ -1,0 +1,21 @@
+.checkboxWithLabel {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0;
+    background-color: var(--white);
+    transition: .5s;
+}
+
+.checkboxWithLabel:hover {
+    background-color: var(--black-alpha-04);
+}
+
+.label {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+}
